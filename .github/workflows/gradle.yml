@@ -34,4 +34,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: guppy-${{github.run_number}}-distribution
-        path: ${{env.HOME}}/.m2/repository/com/github/marco-schmidt/guppy/
+        path: build/libs
