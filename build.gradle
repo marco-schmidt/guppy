@@ -1,0 +1,23 @@
+plugins {
+  id 'java-gradle-plugin'
+  id 'groovy'
+  id 'maven-publish'
+  id 'net.researchgate.release' version '2.8.1'
+}
+
+dependencies {
+  implementation gradleApi()
+}
+
+gradlePlugin {
+  plugins {
+    main {
+      id = "${groupId}.${artifactId}"
+      implementationClass = "com.github.marco_schmidt.guppy.gradleplugin.GuppyPlugin"
+    }
+  }
+}
+
+group groupId
+
+defaultTasks 'publishToMavenLocal'
