@@ -1,4 +1,4 @@
-# guppy
+# guppy [![Java CI](https://github.com/marco-schmidt/guppy/workflows/Java%20CI/badge.svg)](https://github.com/marco-schmidt/guppy/actions?query=workflow%3A%22Java+CI%22)
 
 A gradle plugin providing basics
 
